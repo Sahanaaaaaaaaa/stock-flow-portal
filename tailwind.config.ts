@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				stock: {
+					'blue': '#0A2463',
+					'teal': '#55DDE0',
+					'skyblue': '#3E92CC',
+					'lightgray': '#F6F8FA',
+					'positive': '#16C784',
+					'negative': '#EA3943',
 				}
 			},
 			borderRadius: {
@@ -84,11 +93,35 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'pulse-subtle': {
+					'0%, 100%': {
+						opacity: '1'
+					},
+					'50%': {
+						opacity: '0.85'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out forwards',
+				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-primary': 'linear-gradient(90deg, #0A2463 0%, #3E92CC 100%)',
+				'gradient-subtle': 'linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%)',
 			}
 		}
 	},
