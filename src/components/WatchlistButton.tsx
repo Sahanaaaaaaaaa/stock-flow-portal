@@ -12,8 +12,8 @@ const WatchlistButton = ({ isInWatchlist, onClick }: WatchlistButtonProps) => {
       onClick={onClick}
       className={`p-1.5 rounded-full transition-all ${
         isInWatchlist
-          ? "bg-amber-100 text-amber-500 hover:bg-amber-200"
-          : "bg-gray-100 text-gray-400 hover:bg-gray-200 hover:text-gray-500"
+          ? "bg-amber-900/30 text-amber-500 hover:bg-amber-900/50"
+          : "bg-muted text-muted-foreground hover:bg-muted/80 hover:text-muted-foreground/80"
       }`}
       title={isInWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
     >

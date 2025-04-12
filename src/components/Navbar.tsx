@@ -1,6 +1,7 @@
 
 import { Link, useLocation } from "react-router-dom";
 import { BarChart2, Home, Star } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const location = useLocation();
@@ -42,6 +43,8 @@ const Navbar = () => {
               <Star className="h-5 w-5" />
               <span>Watchlist</span>
             </Link>
+
+            <ThemeToggle />
           </div>
         </div>
       </div>

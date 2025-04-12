@@ -67,9 +67,11 @@ export default {
 					'blue': '#0A2463',
 					'teal': '#55DDE0',
 					'skyblue': '#3E92CC',
-					'lightgray': '#F6F8FA',
-					'positive': '#16C784',
-					'negative': '#EA3943',
+					'darkblue': '#1A1F2C',
+					'darkgray': '#282C34',
+					'darkcard': '#22252C',
+					'positive': '#4ADE80',
+					'negative': '#F87171',
 				}
 			},
 			borderRadius: {
@@ -120,8 +122,8 @@ export default {
 				'pulse-subtle': 'pulse-subtle 2s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(90deg, #0A2463 0%, #3E92CC 100%)',
-				'gradient-subtle': 'linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%)',
+				'gradient-primary': 'linear-gradient(90deg, #1A1F2C 0%, #3E92CC 100%)',
+				'gradient-subtle': 'linear-gradient(180deg, rgba(30,35,45,0.5) 0%, rgba(20,25,35,0) 100%)',
 			}
 		}
 	},
